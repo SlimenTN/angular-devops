@@ -57,10 +57,10 @@ jobs:
 
 
 
-     - name : push to staging server with ssh
-       env :
-           SSHPASS : ${{ secrets.SSHPASS }}
-           SERVER : ${{ secrets.SERVER}}
+      - name : push to staging server with ssh
+        env :
+            SSHPASS : ${{ secrets.SSHPASS }}
+            SERVER : ${{ secrets.SERVER}}
         run : |
            sudo apt-get update 
            sudo apt-get install sshpass -y
